@@ -9,7 +9,7 @@
 <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJnIiB4MT0iMCIgeTE9IjAiIHgyPSIwIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmJlOWEwIi8+PHN0b3Agb2Zmc2V0PSIuNSIgc3RvcC1jb2xvcj0iI2UzYjM0MSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzhhNWExNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMDcwNjA1Ii8+PHBhdGggZD0iTTEyIDQyIEwxNSAyMSBMMjUgMzEgTDMyIDE1IEwzOSAzMSBMNDkgMjEgTDUyIDQyWiIgZmlsbD0idXJsKCNnKSIvPjxyZWN0IHg9IjEyIiB5PSI0NSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjYiIHJ4PSIyIiBmaWxsPSIjY2Q3ZjMyIi8+PC9zdmc+Cg==" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Cinzel:wght@700;900&display=swap" rel="stylesheet">
 <style>
 /* Eternal Empire — gold · bronze · black */
 :root{
@@ -69,7 +69,7 @@ header,main,footer{position:relative;z-index:2}
 
 /* ── header ── */
 .top{position:sticky;top:0;height:var(--hh);display:flex;align-items:center;gap:18px;padding-inline:max(20px,calc((100% - 1200px)/2));
-  background:linear-gradient(180deg,rgba(7,6,5,.94),rgba(7,6,5,.72));backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);z-index:50}
+  background:rgba(7,6,5,.96);border-bottom:1px solid var(--line);z-index:50}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--gold-hi);margin-inline-end:auto}
 .brand-mark{width:34px;height:34px;display:block;filter:drop-shadow(0 0 8px rgba(227,179,65,.6))}
 .brand-name{font:900 17px/1 var(--display);letter-spacing:.18em;background:linear-gradient(180deg,#fff2c0,var(--gold) 60%,var(--bronze));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -116,7 +116,7 @@ h1,h2,h3{font-family:var(--display);margin:0;line-height:1.2;color:var(--ink)}
 /* ── hero ── */
 .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:20px;min-height:calc(100vh - var(--hh));padding-block:40px 30px}
 .hero-title{font-size:clamp(42px,7.2vw,92px);font-weight:900;letter-spacing:.05em;line-height:1.02;
-  background:linear-gradient(100deg,#8a5a14 10%,var(--gold-hi) 30%,#fff6d4 40%,var(--gold) 55%,#8a5a14 85%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 7s linear infinite;filter:drop-shadow(0 6px 24px rgba(227,179,65,.25))}
+  background:linear-gradient(100deg,#8a5a14 10%,var(--gold-hi) 30%,#fff6d4 40%,var(--gold) 55%,#8a5a14 85%);background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 24px rgba(227,179,65,.25))}
 @keyframes shine{to{background-position:-220% center}}
 .hero-tag{font-size:clamp(19px,2.2vw,25px);font-weight:700;margin:18px 0 8px;color:var(--ink);max-width:24em}
 .hero-sub{color:var(--muted);margin:0 0 26px;max-width:46ch}
@@ -136,7 +136,7 @@ body.ready .hero-copy>*:nth-child(4){animation-delay:.32s}body.ready .hero-copy>
 .stage-ring{position:absolute;inset:-4% -6%;opacity:.55;translate:calc(var(--nx)*-10px) calc(var(--ny)*-8px)}
 .stage-ring svg{width:100%;height:100%}
 .char{position:absolute;bottom:0;translate:calc(var(--nx)*var(--d,10)*1px) calc(var(--ny)*var(--d,10)*.55px);transition:translate .25s ease-out}
-.char svg{display:block;width:100%;height:auto;overflow:visible;filter:drop-shadow(0 22px 34px rgba(0,0,0,.75)) drop-shadow(0 0 26px rgba(227,179,65,.22))}
+.char svg{display:block;width:100%;height:auto;overflow:visible}
 .c-knight{inset-inline-start:27%;width:46%;z-index:3;animation:bob 6.5s ease-in-out infinite}
 .c-mage{inset-inline-start:-2%;width:38%;z-index:2;bottom:4%;animation:bob 7.5s ease-in-out -2s infinite}
 .c-op{inset-inline-end:-2%;width:38%;z-index:2;bottom:4%;animation:bob 7s ease-in-out -4s infinite}
@@ -169,12 +169,12 @@ body.ready .hero-copy>*:nth-child(4){animation-delay:.32s}body.ready .hero-copy>
 .ember{animation:ember 5s linear infinite;opacity:0}
 .ember:nth-of-type(2n){animation-duration:6.5s;animation-delay:-2s}.ember:nth-of-type(3n){animation-duration:4.2s;animation-delay:-3s}
 @keyframes ember{0%{opacity:0;transform:translateY(0)}15%{opacity:.9}100%{opacity:0;transform:translateY(-120px)}}
-.rot-slow{transform-origin:300px 300px;animation:spin 90s linear infinite}
-.rot-rev{transform-origin:300px 300px;animation:spin 60s linear infinite reverse}
+.rot-slow{transform-origin:300px 300px}
+.rot-rev{transform-origin:300px 300px}
 
 /* ── cards ── */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px}
-.card{position:relative;border:1px solid var(--line);background:linear-gradient(160deg,rgba(36,26,12,.86),rgba(10,8,5,.92));border-radius:20px;padding:22px;overflow:hidden;transform-style:preserve-3d;will-change:transform;transition:border-color .3s,box-shadow .3s,transform .25s var(--ease)}
+.card{position:relative;border:1px solid var(--line);background:linear-gradient(160deg,rgba(36,26,12,.86),rgba(10,8,5,.92));border-radius:20px;padding:22px;overflow:hidden;transition:border-color .3s,box-shadow .3s,transform .25s var(--ease)}
 .card::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .3s;background:radial-gradient(380px circle at var(--mx,50%) var(--my,0%),rgba(246,215,118,.2),transparent 62%)}
 .card:hover{border-color:var(--line-hi);box-shadow:0 24px 50px -22px rgba(0,0,0,.9),0 0 34px -10px rgba(227,179,65,.4)}
 .card:hover::before{opacity:1}
@@ -217,7 +217,7 @@ body.ready .hero-copy>*:nth-child(4){animation-delay:.32s}body.ready .hero-copy>
 /* ── game page headers ── */
 .ph{position:relative;padding-block:64px 24px;overflow:hidden}
 .ph .container{position:relative;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:20px;min-height:380px}
-.ph h1{font-size:clamp(34px,5.4vw,64px);font-weight:900;letter-spacing:.04em;margin-bottom:12px;background:linear-gradient(100deg,#8a5a14,var(--gold-hi) 40%,var(--gold) 70%,#8a5a14);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 8s linear infinite}
+.ph h1{font-size:clamp(34px,5.4vw,64px);font-weight:900;letter-spacing:.04em;margin-bottom:12px;background:linear-gradient(100deg,#8a5a14,var(--gold-hi) 40%,var(--gold) 70%,#8a5a14);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;}
 .ph .bgart{position:absolute;inset-inline-end:-6%;top:-14%;width:min(720px,70vw);opacity:.4;pointer-events:none}
 .ph .bgart svg{width:100%;height:auto}
 .ph.val::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 46px,rgba(227,179,65,.06) 46px 48px);-webkit-mask-image:linear-gradient(90deg,transparent,#000 40%,transparent);mask-image:linear-gradient(90deg,transparent,#000 40%,transparent)}
@@ -315,7 +315,7 @@ table.prices{width:100%;border-collapse:collapse;margin-top:34px;border:1px soli
 
 /* ── modal ── */
 .modal{position:fixed;inset:0;z-index:800;display:grid;place-items:center;padding:16px}
-.modal-backdrop{position:absolute;inset:0;background:rgba(3,2,1,.78);backdrop-filter:blur(7px);animation:fade .3s}
+.modal-backdrop{position:absolute;inset:0;background:rgba(3,2,1,.86);animation:fade .3s}
 .modal-panel{position:relative;width:min(560px,100%);max-height:calc(100vh - 32px);overflow:auto;border-radius:24px;border:1px solid var(--line-hi);background:linear-gradient(170deg,#1b130a,#0a0805);padding:28px;box-shadow:0 40px 90px -20px #000,0 0 70px -20px rgba(227,179,65,.5);animation:panelIn .45s var(--ease)}
 @keyframes fade{from{opacity:0}}
 @keyframes panelIn{from{opacity:0;transform:translateY(24px) scale(.94) rotateX(8deg)}}
@@ -387,7 +387,7 @@ footer{margin-top:50px;border-top:1px solid var(--line);background:rgba(5,4,3,.8
 .l3d{position:relative;width:260px;height:340px;transform-style:preserve-3d;scale:var(--ls);transition:opacity .45s,scale .7s var(--ease)}
 .l3d .ly{position:absolute;inset:0;clip-path:var(--shape);background:linear-gradient(180deg,#d0903a,#8f5823 55%,#3f2510)}
 .l3d .ly.bevel{clip-path:var(--bevel)}
-.l3d .front{background:linear-gradient(115deg,transparent 36%,rgba(255,255,255,.6) 50%,transparent 64%) 160% 0/260% 100% no-repeat,linear-gradient(160deg,#fff3bd,#e9b94a 42%,#a8771a);animation:sheen 4.2s ease-in-out infinite}
+.l3d .front{background:linear-gradient(115deg,transparent 36%,rgba(255,255,255,.6) 50%,transparent 64%) 160% 0/260% 100% no-repeat,linear-gradient(160deg,#fff3bd,#e9b94a 42%,#a8771a);}
 .l3d .front.bevel{background:linear-gradient(115deg,transparent 36%,rgba(255,255,255,.35) 50%,transparent 64%) 160% 0/260% 100% no-repeat,linear-gradient(200deg,#f6d776,#c88f28 55%,#8a5a14)}
 .l3d .back{background:linear-gradient(160deg,#b97a2c,#6b3f16)}
 .l3d .back.bevel{background:linear-gradient(200deg,#9c6222,#4a2a0e)}
@@ -428,6 +428,37 @@ main{overflow-x:clip}
 .done .cash{text-align:center;justify-items:center}
 .done .cash-row{justify-content:center}
 .order-note .cash{background:rgba(0,0,0,.25)}
+
+/* ── cart ── */
+.cartbtn{position:relative}
+.cartbtn b{position:absolute;top:-6px;inset-inline-end:-6px;min-width:18px;height:18px;padding:0 4px;border-radius:9px;background:var(--gold-hi);color:#1a1005;font:800 11px/18px var(--body);text-align:center}
+.cartbtn.bump{animation:bump .45s var(--ease)}
+@keyframes bump{40%{transform:scale(1.25) rotate(-6deg)}}
+.svc-btns{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.drawer{position:fixed;inset:0;z-index:120}
+.drawer-panel{position:absolute;top:0;bottom:0;inset-inline-end:0;width:min(420px,100%);display:flex;flex-direction:column;background:linear-gradient(180deg,#17110a,#0a0805);border-inline-start:1px solid var(--line-hi);box-shadow:-20px 0 60px rgba(0,0,0,.6);animation:slidein .32s var(--ease)}
+@keyframes slidein{from{transform:translateX(calc(var(--dir,1)*40px));opacity:0}}
+[dir=rtl] .drawer-panel{--dir:-1}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--line)}
+.drawer-head h2{margin:0;font-size:20px;padding:0}
+.drawer-head .modal-x{position:static}
+.drawer-body{flex:1;overflow:auto;padding:14px 20px;display:grid;gap:12px;align-content:start}
+.drawer-foot{padding:16px 20px;border-top:1px solid var(--line);display:grid;gap:10px;justify-items:center}
+.ct-row{display:flex;justify-content:space-between;align-items:center;width:100%;font-size:16px}
+.ct-row b{font:900 22px var(--display);color:var(--gold-hi)}
+.ci{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(227,179,65,.04)}
+.ci-info{display:grid;gap:5px;justify-items:start}
+.ci-price{color:var(--gold-hi);font-weight:700}
+.ci-ctl{display:grid;gap:6px;justify-items:end}
+.qty{display:flex;align-items:center;gap:2px;border:1px solid var(--line-hi);border-radius:10px;overflow:hidden}
+.qty button{width:32px;height:32px;background:transparent;border:0;color:var(--gold-hi);font:700 18px var(--body);cursor:pointer}
+.qty button:hover{background:rgba(227,179,65,.14)}
+.qty span{min-width:28px;text-align:center;font-weight:700}
+.cartsum{display:grid;gap:6px;padding:12px 14px;border:1px solid var(--line-hi);border-radius:14px;background:rgba(227,179,65,.07)}
+.cs-row{display:flex;justify-content:space-between;gap:10px;font-size:14px}
+.cs-row.tot{border-top:1px solid var(--line);padding-top:8px;margin-top:4px;font-size:16px}
+.cs-row.tot b{color:var(--gold-hi);font-family:var(--display)}
+.done .big{white-space:pre-line;line-height:1.5;font-size:26px}
 
 </style>
 </head>
@@ -496,6 +527,10 @@ main{overflow-x:clip}
     <button class="icon-btn" id="btnSound" type="button" aria-pressed="false" data-i18n-aria="aria.sound">
       <svg class="on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>
       <svg class="off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m22 9-6 6M16 9l6 6"/></svg>
+    </button>
+    <button class="icon-btn cartbtn" id="btnCart" type="button" data-i18n-aria="aria.cart">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.4l2.2 11h10.2l2-8H6.4"/><circle cx="9" cy="19.5" r="1.4"/><circle cx="17" cy="19.5" r="1.4"/></svg>
+      <b id="cartCount" hidden>0</b>
     </button>
     <button class="icon-btn txt" id="btnLang" type="button" data-i18n-aria="aria.lang">EN</button>
     <a class="btn btn-gold btn-sm btn-discord" data-discord target="_blank" rel="noopener noreferrer" href="https://discord.gg/UfhFEcAZ2E" data-i18n="btn.joinDiscord"></a>
@@ -713,9 +748,10 @@ main{overflow-x:clip}
           <div class="field"><label for="fName" data-i18n="order.name"></label><input class="input" id="fName" name="customer_name" maxlength="60" autocomplete="name"><div class="err"></div></div>
           <div class="field"><label for="fContact" data-i18n="order.discord"></label><input class="input" id="fContact" name="contact" maxlength="60" autocomplete="off"><div class="err"></div></div>
           <div class="field full"><label for="fIngame" data-i18n="order.ingame"></label><input class="input" id="fIngame" name="ingame_name" maxlength="60" autocomplete="off"><div class="err"></div></div>
-          <div class="field"><label for="fGame" data-i18n="order.game"></label><select class="select" id="fGame" name="game"><option value="lol">League of Legends</option><option value="valorant">Valorant</option></select></div>
-          <div class="field"><label for="fService" data-i18n="order.service"></label><select class="select" id="fService" name="service_id"></select><div class="err"></div></div>
-          <div class="field full"><div class="price-box"><span data-i18n="order.price"></span><strong id="fPrice">—</strong></div><div class="hint" id="fPriceHint"></div></div>
+          <div class="field single-only"><label for="fGame" data-i18n="order.game"></label><select class="select" id="fGame" name="game"><option value="lol">League of Legends</option><option value="valorant">Valorant</option></select></div>
+          <div class="field single-only"><label for="fService" data-i18n="order.service"></label><select class="select" id="fService" name="service_id"></select><div class="err"></div></div>
+          <div class="field full single-only"><div class="price-box"><span data-i18n="order.price"></span><strong id="fPrice">—</strong></div><div class="hint" id="fPriceHint"></div></div>
+          <div class="field full" id="fCartBox" hidden></div>
           <div class="field full" id="fCash" hidden></div>
           <div class="field full"><label for="fDetails" data-i18n="order.details"></label><textarea class="textarea" id="fDetails" name="details" maxlength="1000" data-i18n-ph="order.detailsPh"></textarea></div>
           <div class="full"><button class="btn btn-gold btn-lg" type="submit" id="fSubmit" style="width:100%" data-i18n="order.submit"></button></div>
@@ -735,6 +771,16 @@ main{overflow-x:clip}
       </div>
     </div>
   </div>
+</div>
+
+<!-- cart drawer -->
+<div class="drawer" id="cartDrawer" hidden>
+  <div class="modal-backdrop" data-cclose></div>
+  <aside class="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+    <div class="drawer-head"><h2 id="cartTitle" data-i18n="cart.title"></h2><button class="modal-x" type="button" data-cclose data-i18n-aria="btn.close">×</button></div>
+    <div class="drawer-body" id="cartList"></div>
+    <div class="drawer-foot" id="cartFoot"></div>
+  </aside>
 </div>
 
 <div id="toasts" role="status" aria-live="polite"></div>
@@ -762,7 +808,7 @@ const clean = (v, max, ml) => String(v ?? '').replace(ml ? /[\u0000-\u0009\u000B
 const err = (status, code, fields) => { const e = new Error(code); e.status = status; e.code = code; e.fields = fields; return e; };
 const ALPHA = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
 const newCode = () => { const b = crypto.getRandomValues(new Uint8Array(8)); return 'EE-' + [...b].map((x) => ALPHA[x % ALPHA.length]).join(''); };
-const pub = (o) => ({ code: o.code, game: o.game, service_name: o.service_name, price: o.price, status: o.status, ingame_name: o.ingame_name, created: o.created, updated: o.updated });
+const pub = (o) => ({ code: o.code, game: o.game, service_name: o.service_name, price: o.price, status: o.status, ingame_name: o.ingame_name, created: o.created, updated: o.updated, qty: o.qty || 1 });
 
 function basicReply(text) {
   const ar = /[؀-ۿ]/.test(text), q = text.toLowerCase();
@@ -792,19 +838,24 @@ window.__localApi = async function localApi(url, opt = {}) {
   const u = new URL(url, 'http://local'), p = u.pathname, m = opt.method || 'GET', b = opt.body || {};
   if (m === 'GET' && p === '/api/config') return { store: 'Eternal Empire', discord: DISCORD, ai: 'basic', cash: { number: CASH_NUMBER, label: '' } };
   if (m === 'GET' && p === '/api/services') return { services: SERVICES.map((s) => ({ ...s })) };
-  if (m === 'POST' && p === '/api/orders') {
+  if (m === 'POST' && (p === '/api/orders' || p === '/api/checkout')) {
     const f = {}, customer_name = clean(b.customer_name, 60), contact = clean(b.contact, 60), ingame_name = clean(b.ingame_name, 60), details = clean(b.details, 1000, true);
-    const svc = SERVICES.find((s) => s.id === Number(b.service_id));
+    const items = p === '/api/checkout' ? (Array.isArray(b.items) ? b.items.slice(0, 12) : []) : [{ service_id: b.service_id, qty: 1 }];
+    const lines = items.map((it) => ({ svc: SERVICES.find((s) => s.id === Number(it && it.service_id)), qty: Math.min(20, Math.max(1, parseInt(it && it.qty, 10) || 1)) }));
     if (customer_name.length < 2) f.customer_name = 'required';
     if (contact.length < 2) f.contact = 'required';
     if (ingame_name.length < 2) f.ingame_name = 'required';
-    if (!svc) f.service_id = 'invalid_service';
+    if (!lines.length) f.items = 'required';
+    else if (lines.some((l) => !l.svc)) f.service_id = 'invalid_service';
     if (Object.keys(f).length) throw err(422, 'validation', f);
-    const orders = read(K.orders), now = Date.now();
-    let code = newCode(); while (orders.some((o) => o.code === code)) code = newCode();
-    const o = { code, game: svc.game, service_name: svc.name, price: svc.price, status: 'pending', ingame_name, customer_name, contact, details, created: now, updated: now };
-    orders.unshift(o); write(K.orders, orders.slice(0, 100));
-    return { order: pub(o) };
+    const orders = read(K.orders), now = Date.now(), made = [];
+    for (const { svc, qty } of lines) {
+      let code = newCode(); while (orders.some((o) => o.code === code)) code = newCode();
+      const o = { code, game: svc.game, service_name: svc.name, price: svc.price == null ? null : svc.price * qty, qty, status: 'pending', ingame_name, customer_name, contact, details, created: now, updated: now };
+      orders.unshift(o); made.push(o);
+    }
+    write(K.orders, orders.slice(0, 100));
+    return p === '/api/checkout' ? { orders: made.map(pub) } : { order: pub(made[0]) };
   }
   if (m === 'GET' && p === '/api/orders/track') {
     const codes = String(u.searchParams.get('codes') || '').split(',').map((s) => s.trim().toUpperCase());
@@ -837,6 +888,7 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const LITE = reduce || innerWidth < 760 || (navigator.hardwareConcurrency || 8) <= 4 || (navigator.deviceMemory || 8) <= 4;
 const LS = {
   get(k, d) { try { const v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* storage blocked */ } },
@@ -929,6 +981,7 @@ const I = {
     'order.details': 'تفاصيل إضافية', 'order.detailsPh': 'أي معلومات تساعدنا (اختياري)', 'order.submit': 'تأكيد الطلب',
     'order.done': 'تم تسجيل طلبك', 'order.doneText': 'احتفظ بالكود ده. هنتواصل معاك على ديسكورد، وتقدر تتابع الحالة من «طلباتي».',
     'price.quote': 'حسب الطلب', 'price.cur': 'ج.م',
+    'aria.cart': 'سلة المشتريات', 'btn.addCart': 'أضف للسلة', 'btn.added': 'تمت الإضافة', 'cart.title': 'سلة المشتريات', 'cart.empty': 'السلة فاضية. أضف خدمات من المتجر.', 'cart.browse': 'تصفح الخدمات', 'cart.total': 'الإجمالي', 'cart.quoteNote': 'خدمات بسعر حسب الطلب مش داخلة في الإجمالي، فريقنا هيحدد سعرها.', 'cart.checkout': 'إتمام الطلب', 'cart.remove': 'حذف', 'cart.clear': 'تفريغ السلة', 'order.titleCart': 'إتمام طلب السلة', 'orders.qty': 'الكمية', 'order.doneMany': 'تم تسجيل طلباتك', 'cart.added': 'اتضافت للسلة',
     'err.required': 'الحقل ده مطلوب', 'err.invalid_service': 'اختار خدمة', 'err.network': 'تعذر الاتصال بالسيرفر. جرّب تاني.', 'err.rate': 'محاولات كتير. استنى شوية وجرّب تاني.', 'err.generic': 'حصلت مشكلة. جرّب تاني.',
   },
   en: {
@@ -982,6 +1035,7 @@ const I = {
     'order.details': 'Additional details', 'order.detailsPh': 'Anything that helps us (optional)', 'order.submit': 'Confirm order',
     'order.done': 'Your order is placed', 'order.doneText': 'Keep this code. We will contact you on Discord, and you can follow the status on My Orders.',
     'price.quote': 'Custom quote', 'price.cur': 'EGP',
+    'aria.cart': 'Shopping cart', 'btn.addCart': 'Add to cart', 'btn.added': 'Added', 'cart.title': 'Your cart', 'cart.empty': 'Your cart is empty. Add services from the store.', 'cart.browse': 'Browse services', 'cart.total': 'Total', 'cart.quoteNote': 'Custom-quote services are not in the total; our team will price them.', 'cart.checkout': 'Checkout', 'cart.remove': 'Remove', 'cart.clear': 'Clear cart', 'order.titleCart': 'Checkout', 'orders.qty': 'Qty', 'order.doneMany': 'Your orders are placed', 'cart.added': 'Added to cart',
     'err.required': 'This field is required', 'err.invalid_service': 'Choose a service', 'err.network': 'Could not reach the server. Try again.', 'err.rate': 'Too many attempts. Wait a bit and try again.', 'err.generic': 'Something went wrong. Try again.',
   },
 };
@@ -1085,7 +1139,9 @@ function svcCard(s) {
     h('h3', { class: 'svc-name', text: sName(s) }),
     h('p', { class: 'svc-desc', text: sDesc(s) }),
     h('div', { class: 'svc-foot' }, priceEl(s.price),
-      h('button', { class: 'btn btn-gold btn-sm', type: 'button', onclick: () => openOrder(s.id), text: t('btn.orderNow') })));
+      h('div', { class: 'svc-btns' },
+        h('button', { class: 'btn btn-ghost btn-sm', type: 'button', onclick: (e) => addToCart(s.id, e.currentTarget), text: t('btn.addCart') }),
+        h('button', { class: 'btn btn-gold btn-sm', type: 'button', onclick: () => openOrder(s.id), text: t('btn.orderNow') }))));
 }
 let svcFilter = 'all', svcQuery = '';
 function fill(sel, list) {
@@ -1107,7 +1163,7 @@ function renderServices() {
   $('#priceTable').hidden = !list.length;
 }
 async function loadServices() {
-  try { SERVICES = (await api('/api/services')).services; renderServices(); }
+  try { SERVICES = (await api('/api/services')).services; renderServices(); renderCartBadge(); }
   catch {
     ['#grid-featured', '#grid-lol', '#grid-valorant', '#grid-all'].forEach((sel) => {
       $(sel).replaceChildren(h('div', { class: 'empty' }, t('err.network'), ' ', h('button', { class: 'link-btn', type: 'button', onclick: loadServices, text: t('btn.retry') })));
@@ -1120,6 +1176,85 @@ async function loadConfig() {
     $$('[data-discord]').forEach((a) => { a.href = CONFIG.discord; });
   } catch { /* defaults stay */ }
   setBadge(CONFIG.ai);
+}
+
+
+/* ───────────── cart ───────────── */
+let CART = LS.get('ee_cart', []).filter((x) => x && Number.isInteger(x.id) && x.qty > 0);
+const saveCart = () => LS.set('ee_cart', CART);
+const cartLines = () => CART.map((c) => ({ s: SERVICES.find((x) => x.id === c.id), qty: c.qty })).filter((l) => l.s);
+function cartTotals() {
+  let total = 0, quotes = 0, count = 0;
+  cartLines().forEach(({ s, qty }) => { count += qty; if (s.price == null) quotes++; else total += s.price * qty; });
+  return { total, quotes, count };
+}
+function renderCartBadge() {
+  const { count } = cartTotals(), b = $('#cartCount');
+  b.hidden = !count; b.textContent = count;
+}
+function addToCart(id, btn) {
+  const c = CART.find((x) => x.id === id);
+  if (c) c.qty = Math.min(20, c.qty + 1); else CART.push({ id, qty: 1 });
+  saveCart(); renderCartBadge(); Snd.click();
+  const cb = $('#btnCart'); cb.classList.remove('bump'); void cb.offsetWidth; cb.classList.add('bump');
+  if (btn) { const old = btn.textContent; btn.textContent = t('btn.added'); btn.disabled = true; setTimeout(() => { btn.textContent = t('btn.addCart'); btn.disabled = false; }, 1100); }
+  else toast(t('cart.added'));
+  if (!cd.el.hidden) renderCart();
+}
+function setQty(id, q) {
+  const c = CART.find((x) => x.id === id); if (!c) return;
+  if (q < 1) CART = CART.filter((x) => x.id !== id); else c.qty = Math.min(20, q);
+  saveCart(); renderCartBadge(); renderCart();
+}
+const cd = { el: null, last: null };
+function renderCart() {
+  const lines = cartLines(), list = $('#cartList'), foot = $('#cartFoot');
+  if (!lines.length) {
+    list.replaceChildren(h('div', { class: 'empty' }, h('p', { text: t('cart.empty') }), h('a', { class: 'btn btn-gold btn-sm', href: '#/services', 'data-cclose': '', text: t('cart.browse') })));
+    foot.replaceChildren(); return;
+  }
+  list.replaceChildren(...lines.map(({ s, qty }) => h('div', { class: 'ci' },
+    h('div', { class: 'ci-info' }, h('span', { class: 'game-pill', text: gameName(s.game) }), h('b', { text: sName(s) }),
+      h('span', { class: 'ci-price', text: s.price == null ? t('price.quote') : `${numFmt().format(s.price * qty)} ${t('price.cur')}` })),
+    h('div', { class: 'ci-ctl' },
+      h('div', { class: 'qty' },
+        h('button', { type: 'button', 'aria-label': '−', onclick: () => setQty(s.id, qty - 1), text: '−' }),
+        h('span', { text: qty }),
+        h('button', { type: 'button', 'aria-label': '+', onclick: () => setQty(s.id, qty + 1), text: '+' })),
+      h('button', { class: 'link-btn', type: 'button', onclick: () => setQty(s.id, 0), text: t('cart.remove') })))));
+  const { total, quotes } = cartTotals();
+  foot.replaceChildren(
+    h('div', { class: 'ct-row' }, h('span', { text: t('cart.total') }), h('b', { text: `${numFmt().format(total)} ${t('price.cur')}` })),
+    quotes ? h('p', { class: 'hint', text: t('cart.quoteNote') }) : null,
+    h('button', { class: 'btn btn-gold btn-lg', type: 'button', style: 'width:100%', onclick: openCheckout, text: t('cart.checkout') }),
+    h('button', { class: 'link-btn', type: 'button', onclick: () => { CART = []; saveCart(); renderCartBadge(); renderCart(); }, text: t('cart.clear') }));
+}
+function openCart() {
+  renderCart(); cd.last = document.activeElement;
+  cd.el.hidden = false; document.body.style.overflow = 'hidden'; Snd.click();
+}
+function closeCart() {
+  if (cd.el.hidden) return;
+  cd.el.hidden = true; if (om.el.hidden) document.body.style.overflow = '';
+  if (cd.last && cd.last.focus) cd.last.focus();
+}
+function renderCartBox() {
+  const box = $('#fCartBox'), { total, quotes } = cartTotals();
+  box.replaceChildren(h('div', { class: 'cartsum' },
+    ...cartLines().map(({ s, qty }) => h('div', { class: 'cs-row' }, h('span', { text: `${sName(s)} × ${qty}` }),
+      h('b', { text: s.price == null ? t('price.quote') : `${numFmt().format(s.price * qty)} ${t('price.cur')}` }))),
+    h('div', { class: 'cs-row tot' }, h('span', { text: t('cart.total') }), h('b', { text: `${numFmt().format(total)} ${t('price.cur')}` }))));
+  box.hidden = false;
+  const cb = cashBlock(quotes ? null : total), slot = $('#fCash');
+  slot.replaceChildren(...(cb ? [cb] : [])); slot.hidden = !cb;
+}
+function openCheckout() {
+  if (!cartLines().length) return;
+  closeCart(); openOrder();
+  om.cart = true;
+  $$('#orderForm .single-only').forEach((e) => { e.hidden = true; });
+  $('#omTitle').textContent = t('order.titleCart');
+  renderCartBox();
 }
 
 /* ───────────── order modal ───────────── */
@@ -1155,6 +1290,10 @@ function setErr(input, key) {
   const e = $('.err', f); if (e) e.textContent = key ? t('err.' + key) : '';
 }
 function openOrder(serviceId) {
+  om.cart = false; om.summary = '';
+  { const d = $('#omDone h2'); d.dataset.i18n = 'order.done'; d.textContent = t('order.done'); }
+  $$('#orderForm .single-only').forEach((e) => { e.hidden = false; });
+  $('#fCartBox').hidden = true; $('#omTitle').textContent = t('order.title');
   const s = SERVICES.find((x) => x.id === serviceId);
   $('#fGame').value = s ? s.game : 'lol';
   fillServiceOptions(serviceId);
@@ -1177,20 +1316,26 @@ function closeOrder() {
 async function submitOrder(e) {
   e.preventDefault();
   const f = e.target;
-  const body = { customer_name: f.customer_name.value.trim(), contact: f.contact.value.trim(), ingame_name: f.ingame_name.value.trim(), service_id: Number(f.service_id.value), details: f.details.value.trim() };
+  const body = { customer_name: f.customer_name.value.trim(), contact: f.contact.value.trim(), ingame_name: f.ingame_name.value.trim(), details: f.details.value.trim() };
+  if (om.cart) body.items = CART.map((c) => ({ service_id: c.id, qty: c.qty })); else body.service_id = Number(f.service_id.value);
   let bad = false;
   ['customer_name', 'contact', 'ingame_name'].forEach((k) => { const miss = body[k].length < 2; setErr(f[k], miss ? 'required' : ''); bad = bad || miss; });
-  if (!body.service_id) { setErr(f.service_id, 'invalid_service'); bad = true; } else setErr(f.service_id, '');
+  if (!om.cart) { if (!body.service_id) { setErr(f.service_id, 'invalid_service'); bad = true; } else setErr(f.service_id, ''); }
   if (bad) return;
   const btn = $('#fSubmit'); btn.disabled = true;
   try {
-    const r = await api('/api/orders', { method: 'POST', body });
+    const r = await api(om.cart ? '/api/checkout' : '/api/orders', { method: 'POST', body });
+    const list = r.orders || [r.order];
     LS.set('ee_profile', { customer_name: body.customer_name, contact: body.contact, ingame_name: body.ingame_name });
-    saveOrderCode(r.order.code);
-    om.summary = LOCAL ? [`Eternal Empire — ${r.order.code}`, `${gameName(r.order.game)} — ${r.order.service_name}`, `${t('orders.price')}: ${r.order.price == null ? t('price.quote') : r.order.price + ' ' + t('price.cur')}`,
+    list.slice().reverse().forEach((o) => saveOrderCode(o.code));
+    const money = (o) => (o.price == null ? t('price.quote') : numFmt().format(o.price) + ' ' + t('price.cur'));
+    om.summary = LOCAL ? [`Eternal Empire`, ...list.map((o) => `${o.code} — ${gameName(o.game)} — ${o.service_name}${(o.qty || 1) > 1 ? ' × ' + o.qty : ''} — ${money(o)}`),
       `${t('order.name')}: ${body.customer_name}`, `${t('order.discord')}: ${body.contact}`, `${t('order.ingame')}: ${body.ingame_name}`, body.details && `${t('order.details')}: ${body.details}`].filter(Boolean).join('\n') : '';
-    $('#doneCode').textContent = r.order.code;
-    const dc = cashBlock(r.order.price), dslot = $('#doneCash'); dslot.replaceChildren(...(dc ? [dc] : [])); dslot.hidden = !dc;
+    $('#doneCode').textContent = list.map((o) => o.code).join('\n');
+    $('#omDone h2').textContent = t(list.length > 1 ? 'order.doneMany' : 'order.done'); $('#omDone h2').removeAttribute('data-i18n');
+    const tot = list.reduce((a, o) => a + (o.price || 0), 0), anyQuote = list.some((o) => o.price == null);
+    const dc = cashBlock(anyQuote ? null : tot), dslot = $('#doneCash'); dslot.replaceChildren(...(dc ? [dc] : [])); dslot.hidden = !dc;
+    if (om.cart) { CART = []; saveCart(); renderCartBadge(); }
     $('#omForm').hidden = true; $('#omDone').hidden = false;
     Snd.success(); const rect = $('#omDone .tick').getBoundingClientRect(); burst(rect.left + rect.width / 2, rect.top + rect.height / 2);
   } catch (err) {
@@ -1214,7 +1359,7 @@ function orderCard(o, code) {
   return h('article', { class: 'card ord' },
     h('div', { class: 'ord-head' }, h('span', { class: 'ord-code', text: o.code }), h('span', { class: 'pill ' + o.status, text: t('status.' + o.status) })),
     h('div', { class: 'ord-meta' },
-      h('span', {}, h('b', { text: gameName(o.game) }), ' — ', o.service_name),
+      h('span', {}, h('b', { text: gameName(o.game) }), ' — ', o.service_name, (o.qty || 1) > 1 ? ` × ${o.qty}` : ''),
       h('span', {}, t('orders.ingame') + ': ', h('b', { text: o.ingame_name })),
       h('span', {}, t('orders.price') + ': ', h('b', { text: o.price == null ? t('price.quote') : `${numFmt().format(o.price)} ${t('price.cur')}` })),
       h('span', {}, t('orders.created') + ': ', h('b', { text: fmtDate(o.created) }))),
@@ -1299,15 +1444,15 @@ function startFX() {
   g.addColorStop(0, 'rgba(255,244,204,1)'); g.addColorStop(.25, 'rgba(246,215,118,.85)'); g.addColorStop(1, 'rgba(227,179,65,0)');
   sc.fillStyle = g; sc.fillRect(0, 0, 32, 32);
   let W = 0, H = 0, dpr = 1; const mouse = { x: -999, y: -999 };
-  const resize = () => { dpr = Math.min(devicePixelRatio || 1, 2); W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
+  const resize = () => { dpr = 1; W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); };
   resize(); addEventListener('resize', resize);
   addEventListener('pointermove', (e) => { mouse.x = e.clientX; mouse.y = e.clientY; }, { passive: true });
-  const N = Math.min(70, Math.floor(innerWidth / 16));
+  const N = LITE ? 12 : Math.min(30, Math.floor(innerWidth / 36));
   const mk = (init) => ({ x: Math.random() * W, y: init ? Math.random() * H : H + 12, r: Math.random() * 5 + 2, vy: -(Math.random() * .4 + .1), vx: (Math.random() - .5) * .25, a: Math.random() * .55 + .2, ph: Math.random() * 6.28 });
   const P = Array.from({ length: N }, () => mk(true)); let B = [];
-  burstFn = (x, y) => { for (let i = 0; i < 46; i++) { const a = Math.random() * 6.28, s = Math.random() * 5 + 1.5; B.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s - 1.5, r: Math.random() * 6 + 3, life: 1 }); } };
+  burstFn = (x, y) => { for (let i = 0; i < (LITE ? 22 : 36); i++) { const a = Math.random() * 6.28, s = Math.random() * 5 + 1.5; B.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s - 1.5, r: Math.random() * 6 + 3, life: 1 }); } };
   (function frame() {
-    ctx.clearRect(0, 0, W, H); ctx.globalCompositeOperation = 'lighter';
+    ctx.clearRect(0, 0, W, H);
     for (const p of P) {
       p.ph += .02; p.x += p.vx + Math.sin(p.ph) * .25; p.y += p.vy;
       const dx = p.x - mouse.x, dy = p.y - mouse.y, d2 = dx * dx + dy * dy;
@@ -1317,7 +1462,7 @@ function startFX() {
     }
     B = B.filter((b) => b.life > 0);
     for (const b of B) { b.x += b.vx; b.y += b.vy; b.vy += .12; b.vx *= .985; b.life -= .016; ctx.globalAlpha = Math.max(0, b.life); ctx.drawImage(sprite, b.x - b.r * 2, b.y - b.r * 2, b.r * 4, b.r * 4); }
-    ctx.globalAlpha = 1; ctx.globalCompositeOperation = 'source-over';
+    ctx.globalAlpha = 1;
     requestAnimationFrame(frame);
   })();
 }
@@ -1331,7 +1476,6 @@ function bindFX() {
     if (raf || reduce) return;
     raf = requestAnimationFrame(() => {
       raf = 0;
-      spot.style.setProperty('--gx', px * 100 + '%'); spot.style.setProperty('--gy', py * 100 + '%');
       px3d.forEach((el) => { el.style.setProperty('--nx', ((px - .5) * 2).toFixed(3)); el.style.setProperty('--ny', ((py - .5) * 2).toFixed(3)); });
     });
   }, { passive: true });
@@ -1356,7 +1500,7 @@ function bindFX() {
 /* ───────────── interactive 3D letters: L (Home, League of Legends) and V (Valorant) ───────────── */
 const LETTERS = [];
 function initLetters() {
-  const N = 36, GAP = 1.6, zf = ((N - 1) / 2) * GAP;
+  const N = LITE ? 14 : 22, GAP = 56 / (N - 1), zf = ((N - 1) / 2) * GAP;
   $$('.lstage').forEach((stage) => {
     const l3d = $('.l3d', stage), inner = $('.lname-in', stage), hint = $('.lhint', stage.parentElement);
     const names = (stage.dataset.names || '').split('|').filter(Boolean).map((n) => n.split('/'));
@@ -1425,7 +1569,9 @@ function bindEvents() {
   $('#btnLang').addEventListener('click', () => {
     lang = lang === 'ar' ? 'en' : 'ar'; LS.set('ee_lang', lang);
     applyLang(); renderServices(); renderChat(); setBadge(CONFIG.ai); updatePrice();
-    if (!om.el.hidden) fillServiceOptions(Number($('#fService').value));
+    if (!om.el.hidden && !om.cart) fillServiceOptions(Number($('#fService').value));
+    if (!om.el.hidden && om.cart) { $('#omTitle').textContent = t('order.titleCart'); renderCartBox(); }
+    if (!cd.el.hidden) renderCart();
     if (current === 'orders') refreshOrders();
   });
   $('#btnSound').addEventListener('click', () => {
@@ -1445,10 +1591,13 @@ function bindEvents() {
   $('#fService').addEventListener('change', updatePrice);
   $('#orderForm').addEventListener('submit', submitOrder);
   $$('#orderForm .input').forEach((i) => i.addEventListener('input', () => setErr(i, '')));
+  cd.el = $('#cartDrawer');
+  $('#btnCart').addEventListener('click', openCart);
+  cd.el.addEventListener('click', (e) => { if (e.target.closest('[data-cclose]')) closeCart(); });
   om.el.addEventListener('click', (e) => { if (e.target.closest('[data-close]')) closeOrder(); });
   document.addEventListener('keydown', (e) => {
     if (om.el.hidden) return;
-    if (e.key === 'Escape') closeOrder();
+    if (e.key === 'Escape') { closeOrder(); closeCart(); }
     if (e.key === 'Tab') {
       const f = $$('button:not([disabled]),input,select,textarea,a[href]', $('.modal-panel', om.el)).filter((x) => x.offsetParent !== null);
       if (!f.length) return;
@@ -1502,8 +1651,8 @@ function bindEvents() {
   }
   const bar = $('#loadBar'); let p = 0;
   const tick = setInterval(() => { p = Math.min(90, p + Math.random() * 14); bar.style.width = p + '%'; }, 170);
-  await Promise.all([loadConfig(), loadServices(), sleep(reduce ? 150 : 1900), Promise.race([document.fonts && document.fonts.ready, sleep(2500)])]);
-  clearInterval(tick); bar.style.width = '100%'; await sleep(260);
+  await Promise.all([loadConfig(), loadServices(), Promise.race([document.fonts && document.fonts.ready, sleep(700)])]);
+  clearInterval(tick); bar.style.width = '100%'; await sleep(reduce ? 0 : 140);
   await go();
   $('#loader').classList.add('done'); document.body.classList.add('ready');
 })();
